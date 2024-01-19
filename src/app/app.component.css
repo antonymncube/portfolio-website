@@ -39,8 +39,18 @@
   
  }
  .cover{
-  overflow-x: hidden;
+  overflow-x:  hidden;
+  overflow-y: hidden ;
+  
+  
  }
+
+ .scrollable {
+  overflow-y: auto;
+  max-height: auto;
+  
+   
+}
  
  .content{
   background-color: #2e304b;
@@ -95,13 +105,21 @@ img {
   width: 18%;
   margin-left: 81px;
   height:6% ;
-  padding: 1%;
-  padding-left: 3.70%;
-  padding-top: -10px;
+  /* padding: 1%; */
+  /* padding-left: 3.70%;
+  padding-top: -10px; */
   font-family: 'Salsa', cursive;
   font-size: 16px;
   margin-top: 80px;
+  display: inline-block; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
+}
+
+.contact p {
+  margin: 0;  
 }
 .contact:hover{
    
@@ -316,10 +334,10 @@ display:flex;
 flex-direction: row; 
 width: 600vw;
 }
-.section{ width:100vw; height:10vh}
+/* .section{ width:100vw; height:10vh}
 ::-webkit-scrollbar{
 display:none
-}
+} */
 
 body {
   margin: 0;
@@ -834,3 +852,16 @@ input[type=radio]:checked {
 
  
 }
+
+ 
+::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fd8e8e; /* Set the color of the scrollbar thumb */
+  border-radius: 6px; /* Set the border-radius of the scrollbar thumb */
+}
+
+ 
+ 
